@@ -1,0 +1,41 @@
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> to do list application </title>
+    <link rel="stylesheet"href=" style2.css">
+    
+        
+       
+    
+</head>
+$(document).ready(function(){
+    $("projects").tabs();
+    $("ul").sortable({axis:"X",container:"#projects"});
+    $("ol").sortable({axis:"y",containment:"#projects"});
+
+});
+<body>
+    <div id="container">
+        <h2> To Do List</h2>
+        <div id="projects">
+            <ul id="main">
+                <li><a href="#personal">personal</a></li>
+                <li><a href="#work">Work</a></li>
+                </ul>
+                <ol id="personal">
+                    <li><input type="checkbox">Doctor appointment</li>
+                    <li><input type="checkbox">Call the plumber</li>
+                    </ol>
+                    <ol id="Work">
+                    <li><input type="checkbox"> complete  the task ch</li>
+                    <li><input type="checkbox">meet project manager</li>
+                    </ol>
+                    
+                
+                </div>
+    
+</body>
+</html>
